@@ -15,7 +15,7 @@ This script creates a functional user interface for controlling various paramete
 - Sliders and Toggles: Adds controls for parameters like acceleration, deceleration, lane offset, and more.
 - Event Handlers: Updates the vehicle parameters based on user interactions.
 - CarMaker Integration: Initializes and communicates with the CarMaker simulator.
-- 
+
 ### ControlUI_placebo.py
 
 This script creates a placebo user interface that mimics the ControlUI.py but without actual functionality. It's used to test user interaction without influencing the vehicle's behavior.
