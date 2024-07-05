@@ -156,7 +156,7 @@ class TeslaStyleApp(ctk.CTk):
 
     def init_carmaker(self):
         # Change IP_ADDRESS to 192.168.1.240 in Lab
-        IP_ADDRESS = "192.168.1.240"
+        IP_ADDRESS = "localhost"
         PORT = 16660
         self.cm = CarMaker(IP_ADDRESS, PORT)
         self.cm.connect()
@@ -170,7 +170,6 @@ class TeslaStyleApp(ctk.CTk):
         self.qsteerVeloc = Quantity("Driver.Steer.AngVel", Quantity.FLOAT)
         self.qspeed = Quantity("Driver.ReCon.Speed", Quantity.FLOAT)
         self.qlateralAcc = Quantity("Driver.ReCon.DriveChar.CF_axy", Quantity.FLOAT)
-        # self.qdriveMode = Quantity("Driver.ReCon.DriveMode", Quantity.INT)
 
 # Run the application
 if __name__ == "__main__":

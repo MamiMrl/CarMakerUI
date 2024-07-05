@@ -5,7 +5,8 @@ import time
 class SliderLogger:
     def __init__(self, participant_id):
         self.participant_id = participant_id
-        self.log_file_path = f"{participant_id}_test_participant_HiNo_LoOp_027.csv"
+        # The following line will determine the name of the log file.
+        self.log_file_path = f"{participant_id}_enter_name_of.csv"
         self.setup_logger()
 
     def setup_logger(self):
